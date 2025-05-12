@@ -1,0 +1,45 @@
+/* app/assets/stylesheets/application.css */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@theme {
+  --font-playfair: "Playfair Display", "serif";
+  --breakpoint-*: initial;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --color-gold-light: #dbcaa3;
+  --color-gold-default: #d1bb87;
+  --color-gold-dark: #c4a96a;
+  --color-sand: #fcf9f5;
+  --color-sand-light: #f5f0e8;
+  --color-sand-dark: #e6d9c8;
+  --color-default: #FBFAF9;
+  --container-main: 86rem;
+  --foreground: hsl(27, 4%, 43%);
+}
+
+root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1, h2, h3, h5, h5, h6 {
+  font-family: "playfair", serif;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  max-width: var(--container-main);
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.text-foreground {
+  color: var(--foreground);
+}
