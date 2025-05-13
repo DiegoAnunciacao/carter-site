@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = ["menu", "openIcon", "closeIcon", "navbar"]
+  static targets = ["menu", "openIcon", "closeIcon", "navbar", "link"]
 
   connect() {
     this.open = false
@@ -35,4 +35,5 @@ export default class extends Controller {
       this.navbarTarget.classList.add("bg-transparent", "py-5")
     }
   }
+
 }

@@ -4,8 +4,8 @@
       <%= link_to "CARTER PHOTOGRAPHY", root_path %>
     </div>
     <div class="hidden md:flex items-center space-x-8">
-      <a href="" class="hover:text-gold-dark transition-colors duration-300 text-gold-dark">Home</a>
-      <a href="" class="hover:text-gold-dark transition-colors duration-300">About</a>
+      <%= link_to "Home", root_path, class: "hover:text-gold-dark transition-colors duration-300 #{'active' if current_page?(root_path)}" %>
+      <%= link_to "About", about_path, class: "hover:text-gold-dark transition-colors duration-300 #{'active' if current_page?(about_path)}" %>
       <a href="" class="hover:text-gold-dark transition-colors duration-300">Portfolio</a>
       <a href="" class="hover:text-gold-dark transition-colors duration-300">Products</a>
       <a href="" class="hover:text-gold-dark transition-colors duration-300">Contact</a>
@@ -20,9 +20,9 @@
 
     </button>
   </div>
-  <div data-navbar-target="menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+  <div data-navbar-target="menu" data-controller="navigation" class="hidden md:hidden bg-white shadow-lg absolute w-full">
     <div class="flex flex-col py-4 space-y-4 container">
-      <%= link_to "Home", root_path, class: "hover:text-gold-dark transition-colors duration-300 text-gold-dark" %>
+      <%= link_to "Home", root_path, class: "hover:text-gold-dark transition-colors duration-300" %>
       <a href="" class="hover:text-gold-dark transition-colors duration-300">About</a>
       <a href="" class="hover:text-gold-dark transition-colors duration-300">Portfolio</a>
       <a href="" class="hover:text-gold-dark transition-colors duration-300">Products</a>
