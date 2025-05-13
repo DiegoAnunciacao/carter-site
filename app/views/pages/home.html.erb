@@ -1,9 +1,9 @@
-<div class="relative h-screen">
+<section class="relative h-[100vh]">
   <div class="bg-[url(COVER.jpg)] absolute inset-0 bg-cover bg-bottom">
     <div class="absolute inset-0 bg-black/30"></div>
   </div>
 
-  <div class=" relative h-full flex items-center justify-center">
+  <div class="relative h-full flex items-center justify-center">
     <div class="text-center text-white max-w-3xl px-6">
 
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 md:mb-6">Capturing Love Across <br>Europe</h1>
@@ -14,9 +14,11 @@
 
     </div>
   </div>
-</div>
+</section>
+<section>
+  <%= render 'partials/icons' %>
+  <%= render 'partials/cards' %>
+  <%= render 'partials/notes' %>
+  <%= render 'partials/get_in_touch' %>
+</section>
 
-<%= render 'partials/icons' %>
-<%= render 'partials/cards' %>
-<%= render 'partials/notes' %>
-<%= render 'partials/get_in_touch' %>

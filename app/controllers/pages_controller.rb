@@ -13,4 +13,6 @@ class PagesController < ApplicationController
       { image: "WEDDING1.jpg" }
     ]
   end
+  def about
+  end
 end
