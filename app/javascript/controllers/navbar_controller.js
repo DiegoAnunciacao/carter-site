@@ -28,10 +28,10 @@ export default class extends Controller {
     const scrollY = window.scrollY
 
     if (scrollY > 10) {
-      this.navbarTarget.classList.add("bg-white", "shadow", "py-3")
+      this.navbarTarget.classList.add("bg-white/80", "shadow", "py-3")
       this.navbarTarget.classList.remove("bg-transparent", "py-5")
     } else {
-      this.navbarTarget.classList.remove("bg-white", "shadow", "py-3")
+      this.navbarTarget.classList.remove("bg-white/80", "shadow", "py-3")
       this.navbarTarget.classList.add("bg-transparent", "py-5")
     }
   }
