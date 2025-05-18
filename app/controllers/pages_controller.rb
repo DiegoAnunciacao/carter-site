@@ -26,4 +26,6 @@ class PagesController < ApplicationController
       { title: "Destination Wedding Specialist", description: "Expert in planning, coordinating, and photographing weddings abroad", icon: "check" }
     ]
   end
+  def portfolio
+  end
 end
