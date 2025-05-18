@@ -4,6 +4,7 @@
 
 @theme {
   --font-playfair: "Playfair Display", "serif";
+  --font-lato: "Lato", "sans-serif";
   --breakpoint-*: initial;
   --breakpoint-sm: 480px;
   --breakpoint-md: 768px;
@@ -31,7 +32,7 @@ h1, h2, h3, h5, h5, h6 {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--font-lato);
   background-color: var(--color-default);
 }
 
