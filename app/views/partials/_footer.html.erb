@@ -9,7 +9,7 @@
         <h2 class="text-2xl mb-6">Navigation</h2>
         <div class="grid grid-cols-2 gap-2 text-foreground">
           <%= link_to "Home", root_path, class: "hover:text-gold-dark transition-colors cursor-pointer" %>
-          <a data-action="click->navigation#activate" class="hover:text-gold-dark transition-colors cursor-pointer" href="">Portfolio</a>
+          <%= link_to "Portfolio", portfolio_path, class: "hover:text-gold-dark transition-colors cursor-pointer" %>
           <a data-action="click->navigation#activate" class="hover:text-gold-dark transition-colors cursor-pointer" href="">Contact</a>
           <%= link_to "About", about_path, class: "hover:text-gold-dark transition-colors cursor-pointer" %>
           <a class="hover:text-gold-dark transition-colors cursor-pointer" href="">Products</a>

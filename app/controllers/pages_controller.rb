@@ -27,5 +27,6 @@ class PagesController < ApplicationController
     ]
   end
   def portfolio
+    @couples = Couple.all
   end
 end
